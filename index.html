@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="text-align:center"> EUS IT Request Form </h1>
+
+<p> Welcome to the Engineering Undergraduate Society's website for submitting IT requests. 
+Here you can request an EUS user account, an email address, the creation of a listserv, or a 
+website domain name. For more information, contact it.director@mcgilleus.ca </p>
+<p>Request Type</p>
+<select name="Request Type">
+<option value="null">--</option>
+<option value="User_Account">Infosys account access and creation</option>
+<option value="Email">Email addresses, forwarders, and lists</option>
+<option value="Website">Website domain name creation</option>
+<option value="TeN">TeN account creation</option>
+<option value="Other">Other</option>
+</select>
+
+<!--only appear if they select User_Account-->
+<div id="User_Account">
+<p>What type of account are you creating?</p>
+<form action="">
+<input type="radio" name="accttype" value="committee">EUS Committee or Committee Chair account<br>
+<input type="radio" name="accttype" value="committee_member">EUS Committee member account<br>
+<input type="radio" name="accttype" value="club">EUS Club or EUS Club President account<br>
+<input type="radio" name="accttype" value="department">Departmental Executive or U-rep account<br>
+</form>
+<p>What would you like to do?</p>
+<form action="">
+<input type="radio" name="group" value="new_account">New account<br>
+<input type="radio" name="group" value="account_access">Modify existing account access<br>
+</form>
+
+<!--</form>
+<p>Which are you?</p>
+<form action="">
+<input type="radio" name="group" value="committee">EUS Committee<br>
+<input type="radio" name="group" value="club">EUS Club<br>
+<input type="radio" name="group" value="">Other<input type="text" name="other" value="">
+</form>-->
+
+</body>
+</html>
